@@ -50,7 +50,7 @@
     .footer-content{
         width: 100%;
     }
-
+/*
     .item{
         position: absolute;
         width: 23vw;
@@ -79,7 +79,7 @@
     .item p {
         font-size: 3vw;
     }
-
+*/
     footer{
         height: 30vw;
     }
@@ -89,7 +89,7 @@
     }
 
     .footer-content p{
-        margin: 5vw 0;
+        /*margin: 5vw 0;*/
     }
 
     .footer-content ul li {

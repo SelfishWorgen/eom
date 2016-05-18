@@ -9,6 +9,9 @@ $(document).ready(function(){
     var hideBtn = $('.hide-notification');
     var notification = $('.notification');
     var notificationTimeout;
+    var video = $('.video video');
+
+    video.height(documentObj.height());
 
     burger.on('click', function(){
         headerMobile.toggleClass('show');

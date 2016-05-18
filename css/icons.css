@@ -86,27 +86,33 @@
 
 .item{
     position: absolute;
-    width: 300px;
+    width: 23vw;
 }
 
 .item.first{
-    left: 230px;
-    top: 300px;
+    left: 18vw;
+    top: 25vw;
 }
 
-.item.second{
-    right: 80px;
-    top: 750px;
+.item.second {
+    right: 4vw;
+    top: 60vw;
 }
 
-.item.third{
-    right: 80px;
-    top: 1400px;
+.item.third {
+    right: 4vw;
+    top: 119vw;
 }
 
-.item.fourth{
-    left: 230px;
-    top: 1900px;
+.item.fourth {
+    left: 18vw;
+    top: 160vw;
+}
+
+.item p {
+    font-size: 3vw;
+    font-family: MyriadProRegular;
+    text-align: center;
 }
 
 .item .pic{
@@ -118,10 +124,4 @@
     margin: 0 auto;
     background-size: 50%;
     cursor: pointer;
-}
-
-.item p{
-    font-size: 33px;
-    font-family: MyriadProSemiBold;
-    text-align: center;
 }
