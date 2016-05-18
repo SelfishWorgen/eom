@@ -1,0 +1,127 @@
+.welcome-who .pic{
+    background: url("../img/icons/group.png") 50% no-repeat #686868;
+}
+
+.welcome-what .pic{
+    background: url("../img/icons/bubble-chat-group-conversation.png") 50% no-repeat #686868;
+}
+
+.welcome-did .pic{
+    background: url("../img/icons/bag.png") 50% no-repeat #686868;
+}
+
+.welcome-invite .pic{
+    background: url("../img/icons/tea-cup.png") 50% no-repeat #686868;
+}
+
+.about-life .pic{
+    background: url("../img/icons/heart-blood-pressure.png") 50% no-repeat #686868;
+}
+
+.about-ceo .pic{
+    background: url("../img/icons/crown-premium.png") 50% no-repeat #686868;
+}
+
+.about-team .pic{
+    background: url("../img/icons/group.png") 50% no-repeat #686868;
+}
+
+.about-tips .pic{
+    background: url("../img/icons/magic-wand-interface.png") 50% no-repeat #686868;
+}
+
+.contact-call .pic{
+    background: url("../img/icons/phone-call.png") 50% no-repeat #686868;
+}
+
+.contact-email .pic{
+    background: #686868;
+    color: #fff;
+    text-align: center;
+    font-size: 120px;
+    line-height: 180px;
+    font-family: MyriadProRegular;
+}
+
+.contact-mail .pic{
+    background: url("../img/icons/email-envelope-tick-done.png") 50% no-repeat #686868;
+}
+
+.contact-visit .pic{
+    background: url("../img/icons/pin-map.png") 50% no-repeat #686868;
+}
+
+.services-relations .pic{
+    background: url("../img/icons/broadcast-megaphone.png") 50% no-repeat #686868;
+}
+
+.services-brands .pic{
+    background: url("../img/icons/price-tag.png") 50% no-repeat #686868;
+}
+
+.services-seo .pic{
+    background: url("../img/icons/traffic-statistic-graph.png") 50% no-repeat #686868;
+}
+
+.services-apps .pic{
+    background: url("../img/icons/computer.png") 50% no-repeat #686868;
+}
+
+.portfolio-berk .pic{
+    background: url("../img/icons/1writing-board-tick.png") 50% no-repeat #686868;
+}
+
+.portfolio-ref .pic{
+    background: url("../img/icons/writing-board-tick.png") 50% no-repeat #686868;
+}
+
+.portfolio-list .pic{
+    background: url("../img/icons/stack-file.png") 50% no-repeat #686868;
+    background-size: 50%;
+}
+
+.portfolio-reflist .pic{
+    background: url("../img/icons/Layer%2033.png") 50% no-repeat #686868;
+}
+
+.item{
+    position: absolute;
+    width: 300px;
+}
+
+.item.first{
+    left: 230px;
+    top: 300px;
+}
+
+.item.second{
+    right: 80px;
+    top: 750px;
+}
+
+.item.third{
+    right: 80px;
+    top: 1400px;
+}
+
+.item.fourth{
+    left: 230px;
+    top: 1900px;
+}
+
+.item .pic{
+    max-height: 200px;
+    max-width: 200px;
+    width: 15vw;
+    height: 15vw;
+    border-radius: 50%;
+    margin: 0 auto;
+    background-size: 50%;
+    cursor: pointer;
+}
+
+.item p{
+    font-size: 33px;
+    font-family: MyriadProSemiBold;
+    text-align: center;
+}
