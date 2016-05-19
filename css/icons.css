@@ -90,8 +90,8 @@
 }
 
 .item.first{
-    left: 18vw;
-    top: 25vw;
+    left: 20vw;
+    top: 20vw;
 }
 
 .item.second {
@@ -105,7 +105,7 @@
 }
 
 .item.fourth {
-    left: 18vw;
+    left: 20vw;
     top: 160vw;
 }
 
@@ -122,6 +122,6 @@
     height: 15vw;
     border-radius: 50%;
     margin: 0 auto;
-    background-size: 50%;
+    background-size: 40%;
     cursor: pointer;
 }

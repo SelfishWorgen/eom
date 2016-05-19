@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <title>EOM | Portfolio</title>
     <script src="js/jquery-1.12.3.min.js"></script>
     <script src="js/main.js"></script>
@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/icons.css">
     <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/icons/css/font-awesome.min.css">
+
 </head>
 <body>
 <header>
@@ -28,10 +30,10 @@
             </li>
         </ul>
 
-        <div class="video">
-            <video src="video-logo.mp4" autoplay loop></video>
-        </div>
+    </div>
 
+    <div class="video">
+        <video src="video-logo.mp4" autoplay loop></video>
     </div>
 
     <div class="header-mobile">
@@ -52,36 +54,48 @@
 
         <div class="scroll-container">
             <div class="scroll-line">
+
+                <ul class="scroll-menu">
+                    <li><a href="index.html">welcome<div class="line"></div></a></li>
+                    <li><a href="about.html">about<div class="line"></div></a></li>
+                    <li><a href="services.html">services<div class="line"></div></a></li>
+                    <li class="active"><a href="portfolio.html">portfolio<div class="line"></div></a></li>
+                    <li><a href="contact.html">contact<div class="line"></div></a></li>
+                </ul>
+
+
                 <img class="scroll-img" src="img/logo.png" width="100px">
 
                 <p class="scroll-title">Portfolio</p>
 
-                <div class="burger">
-                    <div class="animation-wrap">
-                        <div class="top lines"></div>
-                        <div class="bot lines"></div>
-                    </div>
-                </div>
+
+                <div style="clear: both"></div>
+            </div>
+        </div>
+        <div class="burger">
+            <div class="animation-wrap">
+                <div class="top lines"></div>
+                <div class="bot lines"></div>
             </div>
         </div>
     </div>
-    <!--<img class="logo-img" src="img/logo.png">-->
+    <img class="logo-img" src="img/logo.png">
 </header>
 <div class="content">
     <div class="item portfolio-berk first">
-        <div class="pic"></div>
+        <div class="pic" data-type="portfolio"></div>
         <p>Berkowitz jewelry</p>
     </div>
     <div class="item portfolio-ref second">
-        <div class="pic"></div>
+        <div class="pic" data-type="reference"></div>
         <p>Berkowitz jewelry reference</p>
     </div>
     <div class="item portfolio-list third">
-        <div class="pic"></div>
+        <div class="pic" data-type="list"></div>
         <p>Portfolio list</p>
     </div>
     <div class="item portfolio-reflist fourth">
-        <div class="pic"></div>
+        <div class="pic" data-type="reflist"></div>
         <p>Reference list</p>
     </div>
 </div>
@@ -94,14 +108,121 @@
     </div>
 </div>
 
+<div class="popup">
+    <div class="popup-content portfolio" data-type="portfolio">
+        <div class="close-popup"><div style="position: relative; width: 100%; height: 100%;"><div class="top lines"></div><div class="bot lines"></div></div></div>
+        <div class="popup-icon">
+            <div class="pic" style="background-image: url('img/icons/1writing-board-tick.png')">
+
+            </div>
+            <p>Berkowitz jewelry</p>
+        </div>
+
+        <div class="step">
+            <p>Step 1 - Drawing</p>
+            <div class="portfolio-image"><img src="img/jewelry.png" class="main-image"><img src="img/pdf.png" class="get-pdf"></div>
+        </div>
+
+        <div class="step">
+            <p>Step 2 - Design</p>
+            <div class="portfolio-image"><img src="img/jewelry1.png" class="main-image"><img src="img/pdf.png" class="get-pdf"></div>
+        </div>
+
+        <p class="step3">Step 3 - Developing</p>
+        <p>You can see the result <a style="cursor: pointer;"><u>here</u></a></p>
+    </div>
+
+    <div class="popup-content reference" data-type="reference">
+        <div class="close-popup"><div style="position: relative; width: 100%; height: 100%;"><div class="top lines"></div><div class="bot lines"></div></div></div>
+        <div class="popup-icon">
+            <div class="pic" style="background-image: url('img/icons/writing-board-tick.png')">
+
+            </div>
+            <p>Berkowitz jewelry reference</p>
+        </div>
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam,
+            eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+            Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione
+            voluptatem sequi nesciunt.</p>
+
+        <a><i class="fa fa-file-pdf-o"></i>Berkowitz jewelry reference link</a>
+    </div>
+
+    <div class="popup-content list" data-type="list">
+        <div class="close-popup"><div style="position: relative; width: 100%; height: 100%;"><div class="top lines"></div><div class="bot lines"></div></div></div>
+        <div class="popup-icon">
+            <div class="pic" style="background-image: url('img/icons/stack-file.png')">
+
+            </div>
+            <p>Portfolio list</p>
+        </div>
+
+        <div class="tips-rotator">
+            <i class="fa fa-chevron-left"></i>
+            <div class="tips-list">
+                Lorem ipsum dolor sit amet
+            </div>
+            <i class="fa fa-chevron-right"></i>
+        </div>
+
+        <div class="step">
+            <p>Step 1 - Drawing</p>
+            <div class="portfolio-image"><img src="img/jewelry.png" class="main-image"><img src="img/pdf.png" class="get-pdf"></div>
+        </div>
+
+        <div class="step">
+            <p>Step 2 - Design</p>
+            <div class="portfolio-image"><img src="img/jewelry1.png" class="main-image"><img src="img/pdf.png" class="get-pdf"></div>
+        </div>
+
+        <p class="step3">Step 3 - Developing</p>
+        <p>You can see the result <a style="cursor: pointer;"><u>here</u></a></p>
+    </div>
+
+    <div class="popup-content reflist reference" data-type="reflist">
+        <div class="close-popup"><div style="position: relative; width: 100%; height: 100%;"><div class="top lines"></div><div class="bot lines"></div></div></div>
+        <div class="popup-icon">
+            <div class="pic" style="background-image: url('img/icons/Layer%2033.png')">
+
+            </div>
+            <p>Reference list</p>
+        </div>
+
+        <div class="tips-rotator">
+            <i class="fa fa-chevron-left"></i>
+            <div class="tips-list">
+                Lorem ipsum dolor sit amet
+            </div>
+            <i class="fa fa-chevron-right"></i>
+        </div>
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam,
+            eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+            Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione
+            voluptatem sequi nesciunt.</p>
+
+        <a><i class="fa fa-file-pdf-o"></i>Berkowitz jewelry reference link</a>
+
+    </div>
+</div>
+
 <footer>
     <div class="footer-content">
         <p>Different Communication</p>
         <ul>
-            <li>C</li>
-            <li>@</li>
+            <li><a style="margin-left:-3px">C</a></li>
+            <li><a style="line-height: 4.5vw;vertical-align: text-top;">@</a></li>
             <li><img src="img/footer-map.png"></li>
-            <li><img src="img/footer-logo.png"></li>
+            <li><img src="img/footer-logo.png" style="margin-left: -0.7vw"></li>
         </ul>
     </div>
 </footer>

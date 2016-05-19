@@ -11,10 +11,11 @@
     }
 
     header .logo-img{
-        width: 30vw;
+        /*display: block;*/
+       /* width: 30vw;
         margin-top: 10vw;
         margin-bottom: 10vw;
-        position: static;
+        position: static;*/
     }
 
     .header-wrap{
@@ -27,7 +28,7 @@
     }
 
     .header-mobile.show .header-mobile-content{
-        height:310px;
+        /*height:310px;*/
     }
 
 
@@ -81,7 +82,7 @@
     }
 */
     footer{
-        height: 30vw;
+        /*height: 30vw;*/
     }
 
     .footer-content{
@@ -92,8 +93,13 @@
         /*margin: 5vw 0;*/
     }
 
+    .scroll-line.show-scroll img{
+        width: 50px;
+        margin: 30px 40px;
+    }
+
     .footer-content ul li {
-        display: inline-block;
+       /* display: inline-block;
         margin: 0 1vw;
         border: 1px solid #fff;
         border-radius: 50%;
@@ -102,7 +108,7 @@
         height: 5vw;
         line-height: 5vw;
         font-size: 4vw;
-        cursor: pointer;
+        cursor: pointer;*/
     }
 
     .footer-content ul li img {
@@ -116,4 +122,12 @@
 .notification{
     width: 200px;
     font-size: 14px;
+}
+
+@media(min-width: 1920px){
+    .item p, .footer-content{
+        font-size: 60px;
+    }
+
+
 }

@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <title>EOM | Welcome</title>
     <script src="js/jquery-1.12.3.min.js"></script>
     <script src="js/main.js"></script>
@@ -21,13 +21,20 @@
             <li><a href="services.html">services</a><div class="line"></div></li>
             <li><a href="portfolio.html">portfolio</a><div class="line"></div></li>
             <li><a href="contact.html">contact</a><div class="line"></div></li>
+            <li>
+                <div class="lang">
+                    <div class="active">en<div class="line"></div></div><span> |</span>
+                    <div>he<div class="line"></div></div>
+                </div>
+            </li>
         </ul>
-        <div class="lang">
-            <div class="active">en<div class="line"></div></div>
-            <div>he<div class="line"></div></div>
-        </div>
 
     </div>
+
+    <div class="video">
+        <video src="video-logo.mp4" autoplay loop></video>
+    </div>
+
 
     <div class="header-mobile">
         <div class="header-mobile-content">
@@ -45,18 +52,31 @@
             </ul>
         </div>
 
+
         <div class="scroll-container">
             <div class="scroll-line">
+
+                <ul class="scroll-menu">
+                    <li class="active"><a href="index.html">welcome<div class="line"></div></a></li>
+                    <li><a href="about.html">about<div class="line"></div></a></li>
+                    <li><a href="services.html">services<div class="line"></div></a></li>
+                    <li><a href="portfolio.html">portfolio<div class="line"></div></a></li>
+                    <li><a href="contact.html">contact<div class="line"></div></a></li>
+                </ul>
+
+
                 <img class="scroll-img" src="img/logo.png" width="100px">
 
-                <p class="scroll-title">welcome</p>
+                <p class="scroll-title">Welcome</p>
 
-                <div class="burger">
-                    <div class="animation-wrap">
-                        <div class="top lines"></div>
-                        <div class="bot lines"></div>
-                    </div>
-                </div>
+
+                <div style="clear: both"></div>
+            </div>
+        </div>
+        <div class="burger">
+            <div class="animation-wrap">
+                <div class="top lines"></div>
+                <div class="bot lines"></div>
             </div>
         </div>
     </div>
@@ -65,19 +85,19 @@
 
 <div class="content">
     <div class="item welcome-who first">
-        <div class="pic"></div>
+        <div class="pic" data-type="who"></div>
         <p>Who we are</p>
     </div>
     <div class="item welcome-what second">
-        <div class="pic"></div>
+        <div class="pic" data-type="what"></div>
         <p>What we doing</p>
     </div>
     <div class="item welcome-did third">
-        <div class="pic"></div>
+        <div class="pic" data-type="did"></div>
         <p>What we did</p>
     </div>
     <div class="item welcome-invite fourth">
-        <div class="pic"></div>
+        <div class="pic" data-type="invite"></div>
         <p>We inviting you</p>
     </div>
 </div>
@@ -90,14 +110,92 @@
     </div>
 </div>
 
+<div class="popup">
+    <div class="popup-content who" data-type="who">
+        <div class="close-popup"><div style="position: relative; width: 100%; height: 100%;"><div class="top lines"></div><div class="bot lines"></div></div></div>
+        <div class="popup-icon">
+            <div class="pic" style="background-image: url('img/icons/group.png')">
+
+            </div>
+            <p>Who we are</p>
+        </div>
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam,
+            eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+            Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione
+            voluptatem sequi nesciunt.</p>
+    </div>
+
+    <div class="popup-content what" data-type="what">
+        <div class="close-popup"><div style="position: relative; width: 100%; height: 100%;"><div class="top lines"></div><div class="bot lines"></div></div></div>
+        <div class="popup-icon">
+            <div class="pic" style="background-image: url('img/icons/bubble-chat-group-conversation.png')">
+
+            </div>
+            <p>What we doing</p>
+        </div>
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam,
+            eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+            Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione
+            voluptatem sequi nesciunt.</p>
+    </div>
+
+    <div class="popup-content did" data-type="did">
+        <div class="close-popup"><div style="position: relative; width: 100%; height: 100%;"><div class="top lines"></div><div class="bot lines"></div></div></div>
+        <div class="popup-icon">
+            <div class="pic" style="background-image: url('img/icons/bag.png')">
+
+            </div>
+            <p>What we did</p>
+        </div>
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam,
+            eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+            Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione
+            voluptatem sequi nesciunt.</p>
+    </div>
+
+    <div class="popup-content invite" data-type="invite">
+        <div class="close-popup"><div style="position: relative; width: 100%; height: 100%;"><div class="top lines"></div><div class="bot lines"></div></div></div>
+        <div class="popup-icon">
+            <div class="pic" style="background-image: url('img/icons/tea-cup.png')">
+
+            </div>
+            <p>We inviting you</p>
+        </div>
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam,
+            eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+            Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione
+            voluptatem sequi nesciunt.</p>
+    </div>
+</div>
+
 <footer>
     <div class="footer-content">
         <p>Different Communication</p>
         <ul>
-            <li>C</li>
-            <li>@</li>
+            <li><a style="margin-left:-3px">C</a></li>
+            <li><a style="line-height: 4.5vw;vertical-align: text-top;">@</a></li>
             <li><img src="img/footer-map.png"></li>
-            <li><img src="img/footer-logo.png"></li>
+            <li><img src="img/footer-logo.png" style="margin-left: -0.7vw"></li>
         </ul>
     </div>
 </footer>

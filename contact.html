@@ -2,8 +2,9 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <title>EOM | Contact</title>
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?v=3.exp&signed_in=true&libraries=places"></script>
     <script src="js/jquery-1.12.3.min.js"></script>
     <script src="js/main.js"></script>
     <link rel="stylesheet" href="css/fonts.css">
@@ -20,12 +21,18 @@
             <li><a href="services.html">services</a><div class="line"></div></li>
             <li><a href="portfolio.html">portfolio</a><div class="line"></div></li>
             <li class="active"><a href="contact.html">contact</a><div class="line"></div></li>
+            <li>
+                <div class="lang">
+                    <div class="active">en<div class="line"></div></div><span> |</span>
+                    <div>he<div class="line"></div></div>
+                </div>
+            </li>
         </ul>
-        <div class="lang">
-            <div class="active">en<div class="line"></div></div>
-            <div>he<div class="line"></div></div>
-        </div>
 
+    </div>
+
+    <div class="video">
+        <video src="video-logo.mp4" autoplay loop></video>
     </div>
 
     <div class="header-mobile">
@@ -46,16 +53,28 @@
 
         <div class="scroll-container">
             <div class="scroll-line">
+
+                <ul class="scroll-menu">
+                    <li><a href="index.html">welcome<div class="line"></div></a></li>
+                    <li><a href="about.html">about<div class="line"></div></a></li>
+                    <li class="active"><a href="services.html">services<div class="line"></div></a></li>
+                    <li><a href="portfolio.html">portfolio<div class="line"></div></a></li>
+                    <li><a href="contact.html">contact<div class="line"></div></a></li>
+                </ul>
+
+
                 <img class="scroll-img" src="img/logo.png" width="100px">
 
                 <p class="scroll-title">Contact</p>
 
-                <div class="burger">
-                    <div class="animation-wrap">
-                        <div class="top lines"></div>
-                        <div class="bot lines"></div>
-                    </div>
-                </div>
+
+                <div style="clear: both"></div>
+            </div>
+        </div>
+        <div class="burger">
+            <div class="animation-wrap">
+                <div class="top lines"></div>
+                <div class="bot lines"></div>
             </div>
         </div>
     </div>
@@ -63,19 +82,19 @@
 </header>
 <div class="content">
     <div class="item contact-call first">
-        <div class="pic"></div>
+        <div class="pic" data-type="call"></div>
         <p>Call us</p>
     </div>
     <div class="item contact-email second">
-        <div class="pic">@</div>
+        <div class="pic" data-type="email">@</div>
         <p>Email us</p>
     </div>
     <div class="item contact-mail third">
-        <div class="pic"></div>
+        <div class="pic" data-type="mail"></div>
         <p>Mail us</p>
     </div>
     <div class="item contact-visit fourth">
-        <div class="pic"></div>
+        <div class="pic" data-type="visit"></div>
         <p>Visit us</p>
     </div>
 </div>
@@ -88,14 +107,90 @@
     </div>
 </div>
 
+<div class="popup">
+    <div class="popup-content" data-type="email">
+        <div class="close-popup"><div style="position: relative; width: 100%; height: 100%;"><div class="top lines"></div><div class="bot lines"></div></div></div>
+        <div class="popup-icon">
+            <div class="pic">
+                @
+            </div>
+            <p>Email us</p>
+        </div>
+
+        <input type="text" class="popup-input" placeholder="Email">
+        <input type="text" class="popup-input" placeholder="Name">
+        <input type="text" class="popup-input" placeholder="Telephone">
+
+        <div class="files">
+            <button type="button">+ Add file</button>
+            <div class="file">file.txt<span>x</span></div>
+        </div>
+
+        <textarea class="popup-text" rows="5" placeholder="Tell us more"></textarea>
+
+        <button type="submit" class="popup-submit">SEND</button>
+    </div>
+
+    <div class="popup-content mail" data-type="mail">
+        <div class="close-popup"><div style="position: relative; width: 100%; height: 100%;"><div class="top lines"></div><div class="bot lines"></div></div></div>
+        <div class="popup-icon">
+            <div class="pic" style="background-image: url('img/icons/email-envelope-tick-done.png')">
+
+            </div>
+            <p>Mail us</p>
+
+
+        </div>
+        <div class="popup-inner">
+            <img src="img/icons/email-envelope.png"><span> Our address: </span> Harakon 17, Ramat Gan, Israel
+        </div>
+    </div>
+
+    <div class="popup-content call" data-type="call">
+        <div class="close-popup"><div style="position: relative; width: 100%; height: 100%;"><div class="top lines"></div><div class="bot lines"></div></div></div>
+        <div class="popup-icon">
+            <div class="pic" style="background-image: url('img/icons/phone-call.png')">
+
+            </div>
+            <p>Call us</p>
+        </div>
+        <ul>
+            <li><div class="image" style="background-position: 0 -166px"></div>Phone: +(972)54 23 23 567</li>
+            <li><div class="image" style="background-position: 0 -120px"></div>Fax +(972)54 23 23 567</li>
+            <li><div class="image" style="background-position: 7px 9px"></div>Viber: +(972)54 23 23 567</li>
+            <li><div class="image" style="background-position: 0 -78px"></div>WhatsApp: +(972)54 23 23 567</li>
+            <li><div class="image" style="background-position: 0 -37px"></div>Skype: skypeLogin</li>
+        </ul>
+    </div>
+
+    <div class="popup-content visit" data-type="visit">
+        <div class="close-popup"><div style="position: relative; width: 100%; height: 100%;"><div class="top lines"></div><div class="bot lines"></div></div></div>
+        <div class="popup-icon">
+            <div class="pic" style="background-image: url('img/icons/pin-map.png')">
+
+            </div>
+            <p>Visit us</p>
+
+        </div>
+        <div class="map-container">
+            <div class="maps">
+                <div class="map" style="background-position: 0 0"><div class="line"></div></div>
+                <div class="map" style="background-position: 48px 2px"></div>
+            </div>
+            <div id="map"></div>
+        </div>
+
+    </div>
+</div>
+
 <footer>
     <div class="footer-content">
         <p>Different Communication</p>
         <ul>
-            <li>C</li>
-            <li>@</li>
+            <li><a style="margin-left:-3px">C</a></li>
+            <li><a style="line-height: 4.5vw;vertical-align: text-top;">@</a></li>
             <li><img src="img/footer-map.png"></li>
-            <li><img src="img/footer-logo.png"></li>
+            <li><img src="img/footer-logo.png" style="margin-left: -0.7vw"></li>
         </ul>
     </div>
 </footer>
